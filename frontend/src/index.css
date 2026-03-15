@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Bouton confirmer */
+.swal2-confirm-btn {
+  background-color: #3085d6 !important;
+  color: white !important;
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+  margin-right: 8px !important;
+  font-size: 15px !important;
+}
+
+/* Bouton annuler */
+.swal2-cancel-btn {
+  background-color: #d33 !important;
+  color: white !important;
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+  font-size: 15px !important;
+}
+
+/* Mode clair */
+.swal2-light {
+  background-color: #ffffff !important;
+  color: #333 !important;
+}
+
+/* Mode sombre */
+.swal2-dark {
+  background-color: #1f2937 !important; /* gris Tailwind gray-800 */
+  color: #f3f4f6 !important; /* texte blanc/gris clair */
+  border: 1px solid #374151 !important; /* bordure gris */
+  box-shadow: none !important;
+}
+
+/* Icônes dans le mode sombre */
+.swal2-dark .swal2-icon-content {
+  color: #fcd34d !important; /* jaune lisible */
+}
+/* Scrollbar style compatible sans plugin */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ca3af; /* gris */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e7eb; /* gris clair */
+}
