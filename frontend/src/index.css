@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-brand {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* ================================================================
+   SWEETALERT2 - BOUTONS (sélecteurs corrects : confirm/cancel/deny,
+   PAS confirm-btn/cancel-btn qui n'existent pas dans SweetAlert2)
+   ================================================================ */
+.swal2-styled.swal2-confirm {
+  background-color: #3085d6 !important;
+  color: #ffffff !important;
+  padding: 8px 20px !important;
+  border-radius: 6px !important;
+  font-size: 15px !important;
+  border: none !important;
+}
+
+.swal2-styled.swal2-cancel {
+  background-color: #6b7280 !important;
+  color: #ffffff !important;
+  padding: 8px 20px !important;
+  border-radius: 6px !important;
+  font-size: 15px !important;
+  border: none !important;
+}
+
+.swal2-styled.swal2-deny {
+  background-color: #d33 !important;
+  color: #ffffff !important;
+  padding: 8px 20px !important;
+  border-radius: 6px !important;
+  font-size: 15px !important;
+  border: none !important;
+}
+
+/* ================================================================
+   SWEETALERT2 - MODE SOMBRE AUTOMATIQUE
+   S'applique à TOUTES les popups (confirmation, succès, erreur...)
+   dès que la classe "dark" est présente sur <html>, sans avoir
+   besoin d'ajouter customClass sur chaque appel Swal.fire()
+   ================================================================ */
+html.dark .swal2-popup {
+  background-color: #1f2937 !important;
+  color: #f3f4f6 !important;
+}
+
+html.dark .swal2-title,
+html.dark .swal2-html-container {
+  color: #f3f4f6 !important;
+}
+
+/* Icônes en mode sombre - jaune lisible sur fond foncé */
+html.dark .swal2-icon-content {
+  color: #fcd34d !important;
+}
+
+/* Classes manuelles conservées pour compatibilité 
+   (utilisées explicitement via customClass dans certains handleDelete) */
+.swal2-light {
+  background-color: #ffffff !important;
+  color: #333 !important;
+}
+
+.swal2-dark {
+  background-color: #1f2937 !important;
+  color: #f3f4f6 !important;
+  border: 1px solid #374151 !important;
+  box-shadow: none !important;
+}
+
+.swal2-dark .swal2-icon-content {
+  color: #fcd34d !important;
+}
+
+/* ================================================================
+   SCROLLBAR
+   ================================================================ */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
